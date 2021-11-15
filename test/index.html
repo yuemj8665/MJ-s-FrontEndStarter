@@ -1,0 +1,79 @@
+<!DOCTYPE html> 
+<!-- 
+    문서의 HTML 버전을 지정한다.
+    DOCTYPE(DTD, Document Type Definition)은 마크업 언어에서 문서 형식을 정의하며,
+    웹 브라우저가 어떤 HTML버전의 해석 방식으로 페이지를 이해하면 되는지 알려주는 용도.
+    HTML5가 표준.
+
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Trans.. 
+    라고 적혀있으면 XHTML 방식이다.
+-->
+<html lang="ko"> <!-- 시작 태그-->
+    <!--
+        ㅇHTML
+        문서의 전체 범위. HTML 문서가 어디에서 시작하고 어디에서 끝나는지 알려주는 역할 
+    -->
+    <head> 
+        <!--
+            ㅇHEAD
+            문서의 정보를 나타내는 범위
+            웹 브라우저가 해석해야 할 웹 페이지의 제목, 설명, 사용할 파일들의 위치, 스타일같은
+            사용자의 눈에 웹 페이지의 보이지않는 정보들을 작성하는 범위
+        -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+            ㅇmeta
+            정보를 의미. HTML문서의 제작자, 내용, 키워드 같은 여러 정보를 검색 엔진이나 브라우저에게 제공한다.
+        -->
+        
+        <title>title이 여기에 표시 됩니다!!</title>
+        <!--
+            ㅇtitle
+            HTML 문서의 제목(title)을 정의한다.
+            웹 브라우저에 표시하는 것.
+        -->
+        <link rel="stylesheet" href="./css/main.css"/> <!-- 스타일 파일을 따로 저장 후, link태그로 CSS를 연결하여 사용한다.-->
+        <link rel="icon" href="./images/favicon.png"/>
+        <!--
+            ㅇLink
+            외부 문서를 가져와 연결할 때 사용한다.(대부분 CSS파일을 사용)
+            // ref : (필수)가져올 문서와 관게
+            // href : 가져올 문서의 경로
+        -->
+        <script src="./js/main.js"></script> <!-- JS 파일을 사용하기 위해서 따로 저장 후, src속성을 사용하여 스크립트를 사용한다.-->
+        <!--
+            ㅇScript
+            JS를 HTML문서에서 사용한다.
+            // src : JS파일을 가져온다.
+        -->
+        <style>
+            div {
+                text-decoration: underline;
+            }
+        </style>
+        <!--
+            ㅇStyle
+            스타일(CSS)를 HTML문서 안에서 작성하는 경우에 사용한다.
+            보통은 CSS 파일을 만들어서 Link로 넣는다.
+        -->
+    </head>
+    <body>
+        <!--
+            ㅇBODY
+            문서의 구조를 나타내는 범위
+            사용자의 화면을 통해 보여지는 로고, 헤더, 푸터, 내비게이션, 메뉴, 버튼, 이미지같은
+            사용자의 눈에 웹 페이지의 보여지는 구조를 작성하는 범위
+        -->
+
+        <div>Hello World!!</div>
+        <img src="./images/logo.png" alt="대체택스트 벤츠">
+        <img src="https://s.pstatic.net/dthumb.phinf/?src=%22https%3A%2F%2Fimgauto-phinf.pstatic.net%2F20211109_195%2Fauto_16364574045650ThlU_PNG%2F20211109202954_pIqCZLOq.png%22&type=mfullfill358_168_white" alt="대체택스트 벤츠">
+        <!--
+            ㅇimg
+            // alt(Alternate)는 이미지가 출력되지 못할 경우 대신 출력할 텍스트, 대체 텍스트라 부른다.
+            이미지 경로가 잘못되거나 네트워크가 불안정하거나 등, 이미지를 출력할 수 없는 다양한 상황에서
+            이미지 대신 글자로 표기된다.
+        -->
+    </body>
+</html> <!-- 종료 태그 -->

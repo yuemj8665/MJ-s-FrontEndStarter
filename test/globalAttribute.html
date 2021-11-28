@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color:red;
+        }
+
+        #abc {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://naver.com" target="_blank" title="네이버로 이동..">NAVER</a>
+    
+    <div>
+        <span>동해물과</span> <span class="red">백두산</span>이 마르고 닳도록 하느님이 보우하사 <span class="red">우리나라</span> 만세
+    </div>
+
+    <div>
+        <span id="abc">동해물</span>과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라
+    </div>
+
+
+    <div>
+        <div data-fruite-name="apple">사과</div>
+        <div data-fruite-name="banana">바나나</div>
+    </div>
+</body>
+<script defer>
+    const els = document.querySelector('div');
+    els.forEach(el => {
+        console.log(el.dataset.fruitName)
+    })
+</script>
+</html>

@@ -124,4 +124,4 @@
     - 장점&단점 : HTML에 연결이 되서 CSS(1)내에 있는 import라는 소스가 분석되기 전까지는 CSS(2)는 HTML에 연결할 수 없다.
     - 일부러 연결을 지연시키기 위한 방법도 있다.
     - 하지만 지연이 되는것 자체가 단점이 된다.
-![CSS 선언방식 이미지](![](https://blogfiles.pstatic.net/MjAyMTEyMDJfMTA4/MDAxNjM4NDQ2NzE4NTk0.vwM1zqCZDN8BGaOpA-vRqIMQGHEVHXaPwr2v3K3PvX8g.mI8YGutp-9HW_gi5TFyalcLT7AiDFT3LPEmB_348Ed8g.PNG.yuemj/2021-12-02_readme.png?type=w1))
+![CSS 선언방식 이미지](https://blogfiles.pstatic.net/MjAyMTEyMDJfMTA4/MDAxNjM4NDQ2NzE4NTk0.vwM1zqCZDN8BGaOpA-vRqIMQGHEVHXaPwr2v3K3PvX8g.mI8YGutp-9HW_gi5TFyalcLT7AiDFT3LPEmB_348Ed8g.PNG.yuemj/2021-12-02_readme.png?type=w1)

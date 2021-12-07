@@ -147,6 +147,8 @@
 	<span>오렌지</span>
 </div>
 ```
+![선택자1](https://blogfiles.pstatic.net/MjAyMTEyMDdfMjIx/MDAxNjM4ODc5ODYzMDA4.yhMNomoH-716UzIUDDSbktld9wRdLGwLQNjHNsSp2tog.Z4vhdf9m-WIAmpW7yXEbgEMsz1O45mh9SGlBLKAAqZsg.PNG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%90_1-1.png?type=w1)
+
 ## 4.2. 태그 선택자
 - ABC
 - 태그 이름이 ABC인 요소를 선택한다.
@@ -168,6 +170,8 @@
 	<span>오렌지</span>
 </div>
 ```
+![선택자2](https://blogfiles.pstatic.net/MjAyMTEyMDdfODYg/MDAxNjM4ODc5ODYzMjM1._iJoTz8mPxFdN-oNnG-FOhjsSiSTbtjvwx5qtUVx-gkg.9ySxb9MsuCqxDY2Fqi6Tab13TcEs4D__gNbiDkXbTgwg.JPEG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%902-2.jpg?type=w1)
+
 ## 4.3. 클래스 선택자
 - .ABC
 - html class 속성의 값이 ABC인 요소를 선택한다
@@ -188,6 +192,8 @@
 	<span class="orange">오렌지</span>
 </div>
 ```
+![선택자3](https://blogfiles.pstatic.net/MjAyMTEyMDdfODAg/MDAxNjM4ODc5ODYzODM2.7Dw2nKrNHJ-cC5h2uYPgqw27WuEsgI0dhoDlfyYXBQwg.joHqfSS3ddCrXvSaOs4byGWg3F3CSJ8umeZ840hi-Aog.JPEG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%903-2.jpg?type=w1)
+
 
 ## 4.4 아이디 선택자
 - #ABC
@@ -209,6 +215,8 @@
 	<span class="orange">오렌지</span>
 </div>
 ```	
+![선택자4](https://blogfiles.pstatic.net/MjAyMTEyMDdfMjYy/MDAxNjM4ODc5ODY0MDE1.kiSJ_UkvUtODhWGRlhWQXCAL8b6sASDU0Y_Y3iKrgagg.JpKc-yuXq4I-8JsMqps9vdVVcs0XhO7dyVAoUiDv6zkg.JPEG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%90_4-2.jpg?type=w1)
+
 
 ## 4.5. 복합 - 일치 선택자
 - ABCXYZ
@@ -231,6 +239,8 @@
 	<span class="orange">오렌지</span>
 </div>
 ```	
+![선택자5](https://blogfiles.pstatic.net/MjAyMTEyMDdfMjEw/MDAxNjM4ODc5ODY0MjEz.TzZFOe_KcZLVjUbpkP25EnFYET9huDzgKccJx5ByGVAg.sfGg5sva3o9d2KtQ4nZFGLSyc9MoeWZjO6WJYPzx9Ngg.JPEG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%90_5-2.jpg?type=w1)
+
 
 ## 4.6. 복합 - 자식 선택자
 - ABC > XYZ
@@ -252,6 +262,8 @@
 	<span class="orange">오렌지</span>
 </div>
 ```	
+![선택자6](https://blogfiles.pstatic.net/MjAyMTEyMDdfMjkg/MDAxNjM4ODc5ODY0Mzcy.-T88Y72VO9vtMthqIPqXxwJT9jHKge7HczeTUzYipNAg.IAqrtGqG3ww3YzIYQxoWGb17IIQTZwMgBpsUSPSJzJgg.JPEG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%906-2.jpg?type=w1)
+
 
 ## 4.7. 복합 - 하위(후손) 선택자
 - ABC XYZ
@@ -275,6 +287,8 @@
 </div>
 <span class="orange">오렌지</span>
 ```	
+![선택자7](https://blogfiles.pstatic.net/MjAyMTEyMDdfMjE0/MDAxNjM4ODc5ODY0NTQx.yqm_mxCvlciY7Q0SVaoKaqyyu9sRCvRzRKllWIkkgQYg.xEQyp3npvkFAJoLYCYVxHjo4NJtW6MuoWytZBIMkpbQg.JPEG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%90_7-2.jpg?type=w1)
+
 
 ## 4.8. 복합 - 인접 형제 선택자
 - ABC + XYZ 
@@ -293,6 +307,8 @@
 	<li>바나나</li>
 </ul>
 ```
+![선택자8](https://blogfiles.pstatic.net/MjAyMTEyMDdfMTk3/MDAxNjM4ODc5ODY0NzY4.un1xDu5fzn7iknoIZ--q-yswGIRUi5yQwouq9YBmpB0g.nEKmTHU4dFYrlS6_knonIT37kRRSKzur17oMkVDxRIcg.JPEG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%90_8-2.jpg?type=w1)
+
 
 ## 4.9. 복합 - 일반 형제 선택자
 - ABC ~ XYZ 
@@ -311,3 +327,4 @@
 	<li>바나나</li>
 </ul>
 ```
+![선택자9](https://blogfiles.pstatic.net/MjAyMTEyMDdfMjky/MDAxNjM4ODc5ODY0OTYy.Yjp0lL2zJ2GxJuSWzvvJeUFus-DF46kHMoF8k--SVr0g.mZHG4UUZYi_u_3rvjKPFXPz7JEvang6BDD0cJNoGzscg.JPEG.yuemj/%EC%84%A0%ED%83%9D%EC%9E%90_9-2.jpg?type=w1)

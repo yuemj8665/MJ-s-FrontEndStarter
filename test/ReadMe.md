@@ -125,3 +125,189 @@
     - 일부러 연결을 지연시키기 위한 방법도 있다.
     - 하지만 지연이 되는것 자체가 단점이 된다.
 ![CSS 선언방식 이미지](https://blogfiles.pstatic.net/MjAyMTEyMDJfMTA4/MDAxNjM4NDQ2NzE4NTk0.vwM1zqCZDN8BGaOpA-vRqIMQGHEVHXaPwr2v3K3PvX8g.mI8YGutp-9HW_gi5TFyalcLT7AiDFT3LPEmB_348Ed8g.PNG.yuemj/2021-12-02_readme.png?type=w1)
+
+# 4. 선택자
+
+## 4.1. *
+- 모든 요소를 선택한다.
+```html
+<style>
+	* {
+		color: red;
+	}
+</style>
+<div>
+	<ul>
+		<li>사과</li>
+		<li>딸기</li>
+		<li>오렌지</li>
+	</ul>
+	<div>당근</div>
+	<p>토마토</p>
+	<span>오렌지</span>
+</div>
+```
+## 4.2. 태그 선택자
+- ABC
+- 태그 이름이 ABC인 요소를 선택한다.
+
+```html
+<style>
+	li {
+		color: red;
+	}
+</style>
+<div>
+	<ul>
+		<li>사과</li>
+		<li>딸기</li>
+		<li>오렌지</li>
+	</ul>
+	<div>당근</div>
+	<p>토마토</p>
+	<span>오렌지</span>
+</div>
+```
+## 4.3. 클래스 선택자
+- .ABC
+- html class 속성의 값이 ABC인 요소를 선택한다
+```html
+<style>
+	.orange {
+		color: red;
+	}
+</style>
+<div>
+	<ul>
+		<li>사과</li>
+		<li>딸기</li>
+		<li class="orange">오렌지</li>
+	</ul>
+	<div>당근</div>
+	<p>토마토</p>
+	<span class="orange">오렌지</span>
+</div>
+```
+
+## 4.4 아이디 선택자
+- #ABC
+- html id 속성의 값이 ABC인 요소를 선택한다.
+```html
+<style>
+	#orange {
+		color: red;
+	}
+</style>
+<div>
+	<ul>
+		<li>사과</li>
+		<li>딸기</li>
+		<li id="orange" class="orange">오렌지</li>
+	</ul>
+	<div>당근</div>
+	<p>토마토</p>
+	<span class="orange">오렌지</span>
+</div>
+```	
+
+## 4.5. 복합 - 일치 선택자
+- ABCXYZ
+- 선택자 ABC와 XYZ를 동시에 만족하는 요소 선택
+- 일치 선택자 작성 시, 태그 선택자를 선택해야 하는 경우 태그 선택자를 제일 먼저 적고난 후 이후에 적용한다.
+```html
+<style>
+	span.orange {
+		color: red;
+	}
+</style>
+<div>
+	<ul>
+		<li>사과</li>
+		<li>딸기</li>
+		<li id="orange" class="orange">오렌지</li>
+	</ul>
+	<div>당근</div>
+	<p>토마토</p>
+	<span class="orange">오렌지</span>
+</div>
+```	
+
+## 4.6. 복합 - 자식 선택자
+- ABC > XYZ
+- 선택자 ABC의 자식요소 XYZ를 선택한다
+```html
+<style>
+	ul > .orange {
+		color: red;
+	}
+</style>
+<div>
+	<ul>
+		<li>사과</li>
+		<li>딸기</li>
+		<li id="orange" class="orange">오렌지</li>
+	</ul>
+	<div>당근</div>
+	<p>토마토</p>
+	<span class="orange">오렌지</span>
+</div>
+```	
+
+## 4.7. 복합 - 하위(후손) 선택자
+- ABC XYZ
+- 선택자 ABC의 하위요소 XYZ 선택.
+- **띄어쓰기**가 선택자의 기호이다.
+```html
+<style>
+	div .orange {
+		color: red;
+	}
+</style>
+<div>
+	<ul>
+		<li>사과</li>
+		<li>딸기</li>
+		<li id="orange" class="orange">오렌지</li>
+	</ul>
+	<div>당근</div>
+	<p>토마토</p>
+	<span class="orange">오렌지</span>
+</div>
+<span class="orange">오렌지</span>
+```	
+
+## 4.8. 복합 - 인접 형제 선택자
+- ABC + XYZ 
+- 선택자 ABC의 다음 형제 요소 XYZ **하나**를 선택
+```html
+<style>
+	.orange + li {
+		color: red;
+	}
+</style>
+<ul>
+	<li>사과</li>
+	<li>딸기</li>
+	<li id="orange" class="orange">오렌지</li>
+	<li>망고</li>
+	<li>바나나</li>
+</ul>
+```
+
+## 4.9. 복합 - 일반 형제 선택자
+- ABC ~ XYZ 
+- 선택자 ABC의 다음 형제 요소 XYZ **모두**를 선택
+```html
+<style>
+	.orange ~ li {
+		color: red;
+	}
+</style>
+<ul>
+	<li>사과</li>
+	<li>딸기</li>
+	<li id="orange" class="orange">오렌지</li>
+	<li>망고</li>
+	<li>바나나</li>
+</ul>
+```

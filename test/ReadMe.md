@@ -311,3 +311,93 @@
 	<li>바나나</li>
 </ul>
 ```
+
+## 4.10. 가상 클래스 선택자 - HOVER
+- ABC:hover
+- 선택자 ABC요소에 마우스 커서가 올라가 있는 동안 선택.
+```html
+<style>
+	a:hover{
+		color:red;
+	}
+</style>
+<a href="https://www.naver.com">NAVER</a>
+```
+
+## 4.11. 가상 클래스 선택자 - ACTIVE
+- ABC:active
+- 선택자 ABC요소에 마우스를 클릭하고 있는 동안 선택.
+```html
+<style>
+	a:active{
+		color:red;
+	}
+</style>
+<a href="https://www.naver.com">NAVER</a>
+```
+
+## 4.12. 가상 클래스 선택자 - FOCUS
+- ABC:fucus
+- 선택자 ABC요소에 마우스를 클릭하고 있는 동안 선택.
+```html
+<style>
+	input:focus{
+		backgound-color:orange;
+	}
+</style>
+<input type="text"/>
+```
+
+# 4.13. 가상 클래스 선택자 - FIRST CHILD
+- ABC:first-child
+- 선택자 ABC가 형제 요소 중 첫째라면 선택.
+```html
+<style>
+	.fruits span:first-child{
+		color : red;
+	}
+</style>
+<div>
+	<span>딸기</span>
+	<span>수박</span>
+	<div>오렌지</div>
+	<p>망고</p>
+	<h3>사과</h3>
+</div>
+```
+
+# 4.14. 가상 클래스 선택자 - LAST CHILD
+- ABC:first-child
+- 선택자 ABC가 형제 요소 중 첫째라면 선택.
+```html
+<style>
+	.fruits h3:last-child{
+		color : blue;
+	}
+</style>
+<div>
+	<span>딸기</span>
+	<span>수박</span>
+	<div>오렌지</div>
+	<p>망고</p>
+	<h3>사과</h3>
+</div>
+```
+
+# 4.154. 가상 클래스 선택자 - NTH CHILD
+- ABC:nth-child(n)
+- 선택자 ABC가 형제 요소 중 첫째라면 선택.
+```html
+<style>
+	.fruits h3:last-child{
+		color : orange;
+	}
+</style>
+<div>
+	<span>딸기</span>
+	<span>수박</span>
+	<div>오렌지</div>
+	<p>망고</p>
+	<h3>사과</h3>
+</div>
+```

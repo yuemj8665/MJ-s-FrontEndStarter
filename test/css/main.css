@@ -1,9 +1,61 @@
-@import url("./box.css");
+/* @import url("./box.css"); */
 
 div {
     width: 200px;
     height: 200px;
     font-size: 100px;
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s;
+}
+
+.box1:hover {
+    width: 300px;
+    background-color: royalblue;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 1s;
+}
+
+.box2:active {
+    width: 300px;
+    background-color: black;
+}
+
+.box3 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: 1s;
+}
+
+.box3:focus {
+    width: 300px;
+    background-color: blueviolet;
+}
+
+input:focus{
+    background-color:orange;
+}
+
+.fruits span:first-child{
+    color : red;
+}
+
+.fruits h3:last-child{
+    color : blue;
+}
+
+.fruits *:nth-child(2){
+    color : orange;
 }
 
 

@@ -384,7 +384,7 @@
 ```
 
 # 4.14. 가상 클래스 선택자 - LAST CHILD
-- ABC:first-child
+- ABC:last-child
 - 선택자 ABC가 형제 요소 중 첫째라면 선택.
 ```html
 <style>
@@ -406,7 +406,7 @@
 - 선택자 ABC가 형제 요소 중 첫째라면 선택.
 ```html
 <style>
-	.fruits h3:last-child{
+	.fruits h3:nth-child(2){
 		color : orange;
 	}
 </style>

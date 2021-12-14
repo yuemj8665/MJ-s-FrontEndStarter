@@ -366,7 +366,7 @@
 </style>
 <input type="text"/>
 ```
-![선택자12-1]https://blogfiles.pstatic.net/MjAyMTEyMTJfMjUx/MDAxNjM5MzEwOTczMjE2.De6DzQ-QXEexYg_ovmdEk6SCFCGYd5C_ssXmSpiEb80g.F-55Kqnk1XEIqJQFPWy2Zkvyjp7GkYbaAqOjOUD03NUg.GIF.yuemj/4.12._focus1.gif?type=w1)
+![선택자12-1](https://blogfiles.pstatic.net/MjAyMTEyMTJfMjUx/MDAxNjM5MzEwOTczMjE2.De6DzQ-QXEexYg_ovmdEk6SCFCGYd5C_ssXmSpiEb80g.F-55Kqnk1XEIqJQFPWy2Zkvyjp7GkYbaAqOjOUD03NUg.GIF.yuemj/4.12._focus1.gif?type=w1)
 ![선택자12-2](https://blogfiles.pstatic.net/MjAyMTEyMTJfMjEw/MDAxNjM5MzEwOTczNDI0.2hIeB4b0IL_atpoCvvycuXPdeKY9wirWXKuVU2RAJXQg.8K6eW-5cz0CyrwVVTI6ZHvqmmUwy--THNE5kMRkNlHkg.GIF.yuemj/4.12._focus2.gif?type=w1)
 
 # 4.13. 가상 클래스 선택자 - FIRST CHILD

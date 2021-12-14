@@ -355,7 +355,7 @@
 
 ## 4.12. 가상 클래스 선택자 - FOCUS
 - ABC:fucus
-- 선택자 ABC요소에 마우스를 클릭하고 있는 동안 선택.
+- 선택자 ABC요소에 마우스를 클릭하여 focus가 되면 작동
 ```html
 <style>
 	input:focus{
@@ -374,7 +374,7 @@
 		color : red;
 	}
 </style>
-<div>
+<div class="fruits">
 	<span>딸기</span>
 	<span>수박</span>
 	<div>오렌지</div>
@@ -385,14 +385,14 @@
 
 # 4.14. 가상 클래스 선택자 - LAST CHILD
 - ABC:first-child
-- 선택자 ABC가 형제 요소 중 첫째라면 선택.
+- 선택자 ABC가 형제 요소 중 마지막이라면 선택.
 ```html
 <style>
 	.fruits h3:last-child{
 		color : blue;
 	}
 </style>
-<div>
+<div class="fruits">
 	<span>딸기</span>
 	<span>수박</span>
 	<div>오렌지</div>
@@ -401,16 +401,36 @@
 </div>
 ```
 
-# 4.154. 가상 클래스 선택자 - NTH CHILD
+# 4.15. 가상 클래스 선택자 - NTH CHILD
 - ABC:nth-child(n)
-- 선택자 ABC가 형제 요소 중 첫째라면 선택.
+- 선택자 ABC가 형제 요소 중 n번째 자식을 선택.
+- 2n이라면 0,2,4,6,8... 번쨰 자식을 선택한다.
+- -n+3
 ```html
 <style>
-	.fruits h3:last-child{
+	.fruits *:nth-child(2n){
 		color : orange;
 	}
 </style>
-<div>
+<div class="fruits">
+	<span>딸기</span>
+	<span>수박</span>
+	<div>오렌지</div>
+	<p>망고</p>
+	<h3>사과</h3>
+</div>
+```
+
+# 4.16. 부정 선택자
+- ABC:not(XYZ)
+- 선택자 XYZ가 아닌 ABC요소를 선택한다
+```html
+<style>
+	.fruits *:not(span){
+		color : puple;
+	}
+</style>
+<div class="fruits">
 	<span>딸기</span>
 	<span>수박</span>
 	<div>오렌지</div>

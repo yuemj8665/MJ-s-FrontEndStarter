@@ -54,8 +54,11 @@ input:focus{
     color : blue;
 }
 
-.fruits *:nth-child(2){
+.fruits *:nth-child(2n){
     color : orange;
 }
 
+.fruits *:not(span){
+    color : purple;
+}
 

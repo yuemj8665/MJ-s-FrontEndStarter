@@ -340,6 +340,7 @@
 </style>
 <a href="https://www.naver.com">NAVER</a>
 ```
+![선택자10](https://blogfiles.pstatic.net/MjAyMTEyMTJfMTYy/MDAxNjM5MzEwOTcyNTE0.ERos8z_f2-P8sYxkQTI7MzQofO8dFUDMYiHRLVrAD5Mg.eHwE4GzrzxdKDB5ugafqwYujov1yWfJRtp9L7xpezPcg.GIF.yuemj/4.10._hover.gif?type=w1)
 
 ## 4.11. 가상 클래스 선택자 - ACTIVE
 - ABC:active
@@ -352,6 +353,7 @@
 </style>
 <a href="https://www.naver.com">NAVER</a>
 ```
+![선택자11](https://blogfiles.pstatic.net/MjAyMTEyMTJfMTQ1/MDAxNjM5MzEwOTcyODkx.Ko_xX3pBiHv6bXdGw0AOSMkRpHXSBPWXDRwSosoAm4kg.UTLhfgkWp3cFWHF1iArtYaZL-4oqzuP3kpDxqu--ZpMg.GIF.yuemj/4.11._active.gif?type=w1)
 
 ## 4.12. 가상 클래스 선택자 - FOCUS
 - ABC:fucus
@@ -364,6 +366,8 @@
 </style>
 <input type="text"/>
 ```
+![선택자12-1](https://blogfiles.pstatic.net/MjAyMTEyMTJfMjUx/MDAxNjM5MzEwOTczMjE2.De6DzQ-QXEexYg_ovmdEk6SCFCGYd5C_ssXmSpiEb80g.F-55Kqnk1XEIqJQFPWy2Zkvyjp7GkYbaAqOjOUD03NUg.GIF.yuemj/4.12._focus1.gif?type=w1)
+![선택자12-2](https://blogfiles.pstatic.net/MjAyMTEyMTJfMjEw/MDAxNjM5MzEwOTczNDI0.2hIeB4b0IL_atpoCvvycuXPdeKY9wirWXKuVU2RAJXQg.8K6eW-5cz0CyrwVVTI6ZHvqmmUwy--THNE5kMRkNlHkg.GIF.yuemj/4.12._focus2.gif?type=w1)
 
 # 4.13. 가상 클래스 선택자 - FIRST CHILD
 - ABC:first-child

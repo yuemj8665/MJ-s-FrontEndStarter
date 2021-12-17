@@ -438,3 +438,37 @@
 	<h3>사과</h3>
 </div>
 ```
+
+# 4.17. 가상 요소 선택자(Before)(Pseudo-Elements)
+- ABC::before
+- 선택자 ABC 요소의 **내부 앞**에 내용(Content)을 삽입한다
+- Inline 요소를 추가한다
+- 매우 자주 사용되는 요소이다.
+
+```html
+<style>
+	.box::before{
+		content: "앞!";
+	}
+</style>
+<div class="box">
+	Content!
+</div>
+```
+
+# 4.18. 가상 요소 선택자(after)(Pseudo-Elements)
+- ABC::after
+- 선택자 ABC 요소의 **내부 뒤**에 내용(Content)을 삽입한다
+- Inline 요소를 추가한다
+- 매우 자주 사용되는 요소이다.
+
+```html
+<style>
+	.box::after{
+		content: "뒤!";
+	}
+</style>
+<div class="box">
+	Content!
+</div>
+```

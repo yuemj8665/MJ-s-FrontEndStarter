@@ -369,7 +369,7 @@
 ![선택자12-1](https://blogfiles.pstatic.net/MjAyMTEyMTJfMjUx/MDAxNjM5MzEwOTczMjE2.De6DzQ-QXEexYg_ovmdEk6SCFCGYd5C_ssXmSpiEb80g.F-55Kqnk1XEIqJQFPWy2Zkvyjp7GkYbaAqOjOUD03NUg.GIF.yuemj/4.12._focus1.gif?type=w1)
 ![선택자12-2](https://blogfiles.pstatic.net/MjAyMTEyMTJfMjEw/MDAxNjM5MzEwOTczNDI0.2hIeB4b0IL_atpoCvvycuXPdeKY9wirWXKuVU2RAJXQg.8K6eW-5cz0CyrwVVTI6ZHvqmmUwy--THNE5kMRkNlHkg.GIF.yuemj/4.12._focus2.gif?type=w1)
 
-# 4.13. 가상 클래스 선택자 - FIRST CHILD
+## 4.13. 가상 클래스 선택자 - FIRST CHILD
 - ABC:first-child
 - 선택자 ABC가 형제 요소 중 첫째라면 선택.
 ```html
@@ -387,7 +387,7 @@
 </div>
 ```
 
-# 4.14. 가상 클래스 선택자 - LAST CHILD
+## 4.14. 가상 클래스 선택자 - LAST CHILD
 - ABC:first-child
 - 선택자 ABC가 형제 요소 중 마지막이라면 선택.
 ```html
@@ -405,7 +405,7 @@
 </div>
 ```
 
-# 4.15. 가상 클래스 선택자 - NTH CHILD
+## 4.15. 가상 클래스 선택자 - NTH CHILD
 - ABC:nth-child(n)
 - 선택자 ABC가 형제 요소 중 n번째 자식을 선택.
 - 2n이라면 0,2,4,6,8... 번쨰 자식을 선택한다.
@@ -425,7 +425,7 @@
 </div>
 ```
 
-# 4.16. 부정 선택자
+## 4.16. 부정 선택자
 - ABC:not(XYZ)
 - 선택자 XYZ가 아닌 ABC요소를 선택한다
 ```html
@@ -443,7 +443,7 @@
 </div>
 ```
 
-# 4.17. 가상 요소 선택자(Before)(Pseudo-Elements)
+## 4.17. 가상 요소 선택자(Before)(Pseudo-Elements)
 - ABC::before
 - 선택자 ABC 요소의 **내부 앞**에 내용(Content)을 삽입한다
 - Inline 요소를 추가한다
@@ -460,7 +460,7 @@
 </div>
 ```
 
-# 4.18. 가상 요소 선택자(after)(Pseudo-Elements)
+## 4.18. 가상 요소 선택자(after)(Pseudo-Elements)
 - ABC::after
 - 선택자 ABC 요소의 **내부 뒤**에 내용(Content)을 삽입한다
 - Inline 요소를 추가한다
@@ -476,3 +476,68 @@
 	Content!
 </div>
 ```
+
+## 4.19. 속성 성택자(ATTR)
+- [ABC]
+- 속성 ABC를 포함한 요소 선택
+```html
+<style>
+	[disabled] {
+		color: red;
+	}
+</style>
+<input type="text" value="HAPPY">
+<input type="password" value="1234">
+<input type="tesxt" value="ABCD" disabled>
+```
+
+## 4.20. 속성 선택자(ATTR=VALUE)
+- [ABC="XYZ"]
+- 속성 ABC를 포함하고, 그 속성의 값이 XYZ인 요소 선택
+```html
+<style>
+	[type="password"] {
+		color: orange;
+	}
+</style>
+<input type="text" value="HAPPY">
+<input type="password" value="1234">
+<input type="tesxt" value="ABCD" disabled>
+```
+
+# 5. 스타일 상속
+
+## 5.1. 스타일 상속
+- 스타일을 하위 자식에게 상속시킨다.
+- 상속되는 CSS 속성들
+	- 모두 글자/문자 관련된 속성들(모든 글자/문자 속성은 아님 주의)
+		- font-style : 글자 기울기
+		- font-weight : 글자 두께
+		- font-size : 글자 크기
+		- line-height : 줄 높이
+		- font-family : 폰트
+		- color : 색상
+		- text-align : 정렬
+		- ... 등등
+	
+- 예시
+```html
+<style>
+	.animal{
+		color: red;
+	}
+</style>
+<div class="ecosystem">생태계
+	<div class="animal">동물
+		<div class="tiger">호랑이</div>
+		<div class="lion">사자</div>
+		<div class="elephant">코끼리</div>
+	</div>
+</div>
+<div>식물</div>
+```
+
+## 5.2. 강제 상속
+- 실제로 상속되지 않는 CSS 속성도 상속되게 만든다.
+- 부모의 값을 가져와 상속받아 자동적으로 변경되게 만든다.
+- 이는 사람으로서 실수 할 수 있는 상황을 최대한 줄이기 위해 사용한다.

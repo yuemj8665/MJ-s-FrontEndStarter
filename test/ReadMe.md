@@ -541,3 +541,29 @@
 - 실제로 상속되지 않는 CSS 속성도 상속되게 만든다.
 - 부모의 값을 가져와 상속받아 자동적으로 변경되게 만든다.
 - 이는 사람으로서 실수 할 수 있는 상황을 최대한 줄이기 위해 사용한다.
+
+# 6. 선택자 우선순위
+## 6.1. 우선순위란
+- 같은 요소가 여러 선언의 대상이 될 경우, 어떤 선언의 CSS속성을 우선 적용할지 결정하는 방법
+- 점수가 높은 선언(명시도가 높은 선언)이 우선함.
+- 점수가 같으면, 가장 마지막에 해석 된 선언이 우선한다.
+
+## 6.2. 예시
+```html
+<style>
+	div { color: red !important; }
+	#color_yellow { color: yellow; }
+	.color_green { color: green; }
+	div { color: blue; }
+	* { color: darkblue; }
+	body { color: violet; }
+</style>
+<body>
+	<div
+		id="color_yellow"
+		class="color_green"
+		style="color: orange;">
+		Hello World;
+	</div>
+</body>
+```

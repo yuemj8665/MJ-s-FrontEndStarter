@@ -1,0 +1,58 @@
+#divHello {
+      width: 100px;
+      height: 100px;
+      background-color:orange;
+    }
+    
+#spanWorld {
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+}
+
+.parent{
+    width: 300px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.maxchild{
+    max-width: 300px; /* width : auto*/
+    height:100px;
+    background-color: red;
+}
+
+.minchild{
+    min-width: 400px; /* width : auto*/
+    height:100px;
+    background-color: yellow;
+}
+
+html{
+    font-size: 16px;
+}
+
+.pxParent{
+    width: 300px;
+    height: 200px;
+    background-color: cadetblue;
+    font-size: 10px;
+}
+
+.emChild{
+    width: 20em;
+    height: 50%;
+    background-color: blueviolet;
+}
+
+.remChild{
+    width: 20rem;
+    height: 50%;
+    background-color: rgb(0, 255, 72);
+}
+
+.vwChild{
+    width: 50vw;
+    height: 100vh;
+    background-color: rgb(125, 121, 0);
+}

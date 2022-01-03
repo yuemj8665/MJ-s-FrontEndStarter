@@ -634,7 +634,7 @@
 	- em 단위의 기준은 해당 요소의 글자 크기 기준
 	- 0px과 0vw중 더 큰 값은 같은 값
 
-	### 7.1.3. 마진
+	### 7.1.3. 단축속성
 	1. margin
 		- 요소의 **외부** 여백(공간)을 지정하는 단축속성
 		- 음수 사용 가능 (-10px)
@@ -642,10 +642,28 @@
 		- auto : 브라우저가 여백을 계산한다. 가로(세로)너비가 있는 가운데 정렬에 활용한다.
 		- 단위 : 위에서(7.1.2. 단위) 에서 지정했던 단위 사용
 		- % : 부모 요소의 **가로너비**에 대한 비율로 고정
-		- margin
-	2. 정리
-	- margin이란 요소의 바깥쪽에 존재하는 외부 여백이다.
-	- margin: 40px 30px 20px; 의 30px은 왼쪽과 오른쪽 방향의 외부여백.
+		- margin-top, margin-bottom, margin-left, margin-right으로 각 수치를 직접 지정가능하다.
+		- margin은 뒤에 붙는 숫자의 수 만큼 상단, 우측, 하단, 좌측의 수치를 결정한다.
+		![margin](https://blogfiles.pstatic.net/MjAyMjAxMDNfMjEw/MDAxNjQxMjE4OTc2NDAy.H2bzHaZ1qlsm8FGmaxdOSwpyj77NVlPizVI5hdiUp2Mg.XtlZVdjQOGIob_bIFUWKTygRKoAD2NrkiYU5GEpBSGIg.PNG.yuemj/2022-01-02_margin1.png?type=w1)
+		- 정리
+			- margin이란 요소의 바깥쪽에 존재하는 외부 여백이다.
+			- margin: 40px 30px 20px; 의 30px은 왼쪽과 오른쪽 방향의 외부여백.
+
+	2. padding
+		- 요소의 **내부** 여백(공간)을 지정하는 단축속성
+		- 요소의 크기가 커진다.
+		- 0 : 기본값, 내부여백 없음.
+		- 단위 : px, em, vw등 단위로 지정
+		- % : 부모 요소의 가로 너비에 대한 비율로 지정
+		- padding-top, padding-bottom, padding-left, padding-right으로 각 수치를 직접 지정가능하다.
+		- padding은 뒤에 붙는 숫자의 수 만큼 상단, 우측, 하단, 좌측의 수치를 결정한다.
+		![padding](https://blogfiles.pstatic.net/MjAyMjAxMDNfMTMw/MDAxNjQxMjIwNzg1ODc4.3g3l0YtuAulDguJho3L875lttpAtWcxM0zTH6VcssCEg.SzxN4BibGeoC96xmuOgPFwiLF81hY2-S8yu18_PAH68g.PNG.yuemj/KakaoTalk_20220103_233348817.png?type=w1)
+		- 정리
+			- padding이란 요소의 내부에 여백을 추가하는 역할
+			- padding: 20px, 10px, 40px, 30px; 의 30px은 왼쪽 내부여백을 의미한다.
+			- padding의 특징은 내부에 여백이 추가되기 때문에 요소의 크기가 그만큼 늘어나게 된다.
+
+
 	
 
 

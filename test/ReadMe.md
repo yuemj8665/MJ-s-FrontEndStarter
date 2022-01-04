@@ -663,6 +663,57 @@
 			- padding: 20px, 10px, 40px, 30px; 의 30px은 왼쪽 내부여백을 의미한다.
 			- padding의 특징은 내부에 여백이 추가되기 때문에 요소의 크기가 그만큼 늘어나게 된다.
 
+	3. border
+		- 테두리의 두께, 종류, 색상을 결정.
+		- 요소의 테두리 선을 지정하는 단축 속성
+		- 요소의 크기가 커진다.
+		- 선-두께 선-종류 선-색상;
+		- border-width border-style border-color;
+		
+		1. border-width
+		- medium : 기본값, 중간두께, 그러나 브라우저마다 기준이 다르기때문에 되도록 피하는게 좋다.
+		- thin
+		- thick
+		- 단위 : px, em, % 등, 단위로 지정
+		- border-width는 뒤에 붙는 숫자의 수 만큼 상단, 우측, 하단, 좌측의 수치를 결정한다.
+
+		2. border-stlye
+		- 요소 테두리 선의 종류
+		- *none : 기본값, 선 없음*
+		- *solid : 실선(일반 선)*
+		- dotted : 점선
+		- *dashed : 파선*
+		- double : 두 줄 선
+		- groove : 홈이 파여있는 모양
+		- ridge : 솟은 모양 (groove와 반대)
+		- inset : 요소 전체가 들어간 모양
+		- outset : 요소 전체가 나온 모양
+		- border-stlye 뒤에 붙는 숫자의 속성만큼 각 선의 모양을 지정 할 수 있다.
+
+		3. border-color 
+		- 요소 테두리 선의 색상을 지정하는 단축 속성
+		- black : 기본값, 검정색
+		- 색상 : 선의 색상
+		- transparent : 투명
+		- border-color 뒤에 붙는 숫자의 속성만큼 각 선의 색상을 지정 할 수 있다.
+		- 색상 표현
+			- 색상 이름 : 브라우저에서 제공하는 색상 표현 (red, tomato, royalblue 등...)
+			- Hex 색상코드 : 16진수 색상 (#000, #FFFFFF 등..)
+			- RGB : 빛의 삼원색 (RGB(255, 255, 255))
+			- RGBA : 빛의 삼원색 + 투명도 (RGBA(0, 0, 0, 0.5))
+		
+		4. border-방향, border-방향-속성
+		- 요소의 테두리 선을 지정하는 기타 속성들
+		- border-top-width : 위쪽 선의 두께
+		- border-left-stlye : 왼쪽 선의 종류
+		- border-right-color : 오른쪽 선의 색상 등...
+
+		5. 정리
+		- border 속성의 특징 : padding과 동일하게 요소의 크기가 늘어난다.
+
+
+
+
 
 	
 

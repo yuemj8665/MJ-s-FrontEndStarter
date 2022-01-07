@@ -1,0 +1,53 @@
+.parentVisible {
+    width: 200px;
+    height: 150px;
+    background-color: royalblue;
+    margin: 20px;
+    overflow: visible;
+}
+.childVisible {
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+}
+
+.parentHidden {
+    width: 200px;
+    height: 150px;
+    background-color: royalblue;
+    margin: 20px;
+    overflow: hidden;
+}
+.childHidden {
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+}
+
+.parentScroll {
+    width: 200px;
+    height: 150px;
+    background-color: royalblue;
+    margin: 20px;
+    padding: 20px;
+    overflow: scroll;
+}
+.childScroll {
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+}
+
+.parentAuto {
+    width: 200px;
+    height: 150px;
+    background-color: royalblue;
+    margin: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+.childAuto {
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+}

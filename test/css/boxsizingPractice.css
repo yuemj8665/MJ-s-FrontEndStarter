@@ -1,0 +1,19 @@
+.nomalItem {
+    width: 100px;
+    height: 100px;
+}
+.nomalItem{
+    background-color: orange;
+    border : 4px solid red;
+    padding: 20px;
+}
+.boxsizingPracticeItem {
+    width: 100px;
+    height: 100px;
+}
+.boxsizingPracticeItem{
+    background-color: cadetblue;
+    border : 4px solid blue;
+    padding: 20px;
+    box-sizing: border-box;
+}

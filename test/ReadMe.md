@@ -720,16 +720,14 @@
 		- border 속성의 특징 : padding과 동일하게 요소의 크기가 늘어난다.
 
 		![borderResult](https://blogfiles.pstatic.net/MjAyMjAxMDVfMjgy/MDAxNjQxMzA5MzI1NzY2.S9daliseBd-G8DpOP0nfLXAIbX0iYSJkBR_XkP0av1wg.yVKl1C0fDWtlh0uJ3On9M2_jQQNJENrZ_GUhqdAdSRkg.PNG.yuemj/PRACTICE.png?type=w1)
-
-
+	
 	* border-radius
 		- 0 : 기본값, 둥글게 없음
 		- 단위 : px,me,vm 등 단위로 지정.
 		- border-radius 뒤에 붙는 숫자의 속성만큼 각 모서리의 둥근 정도를 결정 할 수 있다.
 
 		![borderRadius](https://blogfiles.pstatic.net/MjAyMjAxMDVfOTgg/MDAxNjQxMzkxNjAyOTY4.WLGitbcytfWkHh17LLunoabMnDpWoMhAAiR3hRzjKhQg.JxTwMYRhUqJPuWc4ZWWyu55P1Egn_POaSDZAfA4X778g.JPEG.yuemj/2022-01-05_radius.jpg?type=w1)
-
-
+	
 	4. box-sizing
 	- 요소의 크기 계산 기준을 지정
 	- content-box : 기본 값, 요소의 내용(content)으로 크기 계산
@@ -749,7 +747,7 @@
 	5. disply
 	- 요소의 화면 출력(보여짐) 속성
 	- 각 요소에 이미 지정되어 있는 값
-		- block : 상자(레이아웃) 요소. (div_
+		- block : 상자(레이아웃) 요소. (div)
 		- inline : 글자 요소 (span)
 		- inline-block : 글자 + 상자 요소 ()
 	- 따로 지정해서 사용하는 값'
@@ -757,27 +755,60 @@
 		- grid : 그리드 (2차원 레이아웃)
 		- none : 보여짐 특성 없음, 사라짐.
 	- 기타 : table, table-row, table-cell 등등..
-
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
+	- 정리 : HTML Inline 요소에 가로너비를 인위적으로 변경하기 위해서는 display: block;
+	같은 요소를 사용한다.
+	  
+	6. opacity
+	- 요소 투명도
+	- 1 : 기본값, 불투명
+	- 0.x : 투명도
 
 	## 7.2. 글꼴, 문자
 	- 폰트, 서체.
-	- 글꼴의 크기나 두께 제어. 
+	- 글꼴의 크기나 두께 제어.
+	  
+	### 7.2.1 font-style
+	- 글자의 기울기
+	- nomal : 기본값, 기울기 없음
+	- titalic : 이텔릭체
+	- oblique : 기울어진 글자
+	
+	### 7.2.2. font-weight
+	- nomal, 400 : 기본값, 기본 두께
+	- bold, 700 : 두껍게
+	- bolder : 상위(부모) 요소보다 더 두껍게
+	- lighter : 상위(부모) 요소보다 더 얇기
+	- 100 ~ 900 : 100단위의 숫자 9단계의 숫자
+
+	### 7.2.3. font-size
+	- 16px : 기본값, 기본 두꼐
+	- 단위 : px, em, rem 등, 단위로 지정
+	- % : 부모 요소의 폰트 크기에 대한 비율
+	- smaller : 상위(부모) 요소보다 더 작게
+	- larger : 상위(부모) 요소보다 더 크게
+	- xx-small ~ xx-large : 가장 작게~가장 크게.
+
+	### 7.2.4. link-height
+	- 한 줄의 높이, 행간과 유사하다
+	- nomal : 브라우저의 기본 정의를 사용.
+	- 숫자 : 요소의 글꼴의 크기의 배수로 지정.
+	- 단위 : px,em,rem등의 단위로 지정
+	- % : 요소의 글꼴 크기의 비율로 지정
+
+	### 7.2.5. font-family
+	- 글꼴(서체) 지정
+	- 글꼴, "글꼴2", ... 글꼴 계열(serif)
+	- 글꼴 계열 : 필수로 작성.
+		- serif : 바탕체 계열
+		- sans-serif : 고딕체 계열
+		- monospace : 고정너비(가로폭이 동등) 글꼴 계열
+		- cursive : 필기체
+		- fantasy : 장식 글꼴 계열
+	- 띄우쓰기 등, 특수문자가 포함된 글꼴 이름은 큰 따옴표로 묶어야 한다.
+	- 글꼴의 후보 지정하는 이유는 브라우저가 사용 할 수 있는 글꼴들의 우선순위로 시도한다.
+	- 글꼴 후보들을 전부 사용 할 수 없는 상황이라면, 마지막의 작성 된 필수값인 글꼴 계열을 사용한다.
+	  
+	
 
 	## 7.3. 배경
 	- 요소의 배경 색상이나 이미지 삽입으로 제어 가능

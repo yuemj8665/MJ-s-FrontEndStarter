@@ -1,0 +1,42 @@
+.title1 {
+    font-size: 24px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: Serif;
+}
+.p1 {
+    /*font-size: 16px;*/
+    width: 350px;
+    padding: 10px;
+    border: 1px solid;
+    box-sizing: border-box;
+    line-height: 1.4;
+}
+
+.lineheight {
+    font-size: 16px;
+    line-height: 32px;
+    /*line-height: 2;*/
+    /*line-height: 200%;*/
+}
+
+.serif {
+    font-family: serif;
+    line-height: 2;
+}
+.sans-serif {
+    font-family: sans-serif;
+    line-height: 2;
+}
+.monospace {
+    font-family: monospace;
+    line-height: 2;
+}
+.cursive {
+    font-family: cursive;
+    line-height: 2;
+}
+.fantasy {
+    font-family: fantasy;
+    line-height: 2;
+}

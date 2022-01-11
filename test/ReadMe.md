@@ -732,6 +732,8 @@
 	- 요소의 크기 계산 기준을 지정
 	- content-box : 기본 값, 요소의 내용(content)으로 크기 계산
 	- boarder-box : 요소의 내용 + padding + border로 크기 계산
+	
+	![boxSizing](https://blogfiles.pstatic.net/MjAyMjAxMDdfMTM4/MDAxNjQxNTYyNDQwOTY0.5oUjoHL_uP0wqEaLZNLr4jdoLM-8FJrtZ4fivc6j970g._PoqtTdMUMeiPfGkaXKmFupFalshVTfI0dUDwjTFFjgg.JPEG.yuemj/boxsizing2.jpg?type=w1)
 
 	5. overflow
 	- 요소의 크기 이상으로 내용이 넘쳤을 때, 보여짐을 제어하는 단축 속성
@@ -743,8 +745,10 @@
 	* 요소 이상으로 내용이 넘쳤을 때, 보여짐을 제어하는 개별 속성들
 		- overflow-x : 가로
 		- overflow-y : 세로
+	
+	![overflow](https://blogfiles.pstatic.net/MjAyMjAxMTFfMjQz/MDAxNjQxODk5MzQ4NTky.J0rc_Gae43EcXCXShqFHyq5zeibJwUfuPKcatocI-Lsg.JW-zJE6DdQJRySVz8RsUeY3LsbX6XXSqYGEXi4uGw8Yg.JPEG.yuemj/overflow4.jpg?type=w1)
 
-	5. disply
+	6. disply
 	- 요소의 화면 출력(보여짐) 속성
 	- 각 요소에 이미 지정되어 있는 값
 		- block : 상자(레이아웃) 요소. (div)
@@ -758,10 +762,16 @@
 	- 정리 : HTML Inline 요소에 가로너비를 인위적으로 변경하기 위해서는 display: block;
 	같은 요소를 사용한다.
 	  
-	6. opacity
+	![display1](https://blogfiles.pstatic.net/MjAyMjAxMDlfMTc2/MDAxNjQxNzM0MDkwNTk5.eRzqeHF8zAlcqw2PPgdORTZx4vooNjgQ2zETz3eCOIEg.yUFfKltngmUiKMLzO9JRBoRYmdYRbLoETi7P2r_29lYg.JPEG.yuemj/2022-01-09_display1.jpg?type=w1)
+  	![display2](https://blogfiles.pstatic.net/MjAyMjAxMDlfMTc4/MDAxNjQxNzM0MDkxMDA0.WwKIf_DinYJzLsF5rK4mByzPkV8ozEtOLJgPFHpMz4gg.wiehaerRTQvRo05AzoNA3tKa2T2GKL_r1ws0ApDs44Eg.JPEG.yuemj/2022-01-09_display2.jpg?type=w1)
+  	![display3](https://blogfiles.pstatic.net/MjAyMjAxMDlfNiAg/MDAxNjQxNzM0MDkxNTAz.-IfH3ZPSiWTkpzxr5tjNmxh8-WB6nC4tkpS3Ng8UWV4g.AT_h8lWpdljLp71QwxqfRKZtNbfZbrWvDodQzo1NYtYg.JPEG.yuemj/2022-01-09_display3.jpg?type=w1)
+	  
+	7. opacity
 	- 요소 투명도
 	- 1 : 기본값, 불투명
 	- 0.x : 투명도
+	
+	![opacity](https://blogfiles.pstatic.net/MjAyMjAxMDlfMjc0/MDAxNjQxNzM0MTExNjAx.uzKOSBajaHwBbmOq6bL8XhuA2EQ8EEcy6Qn6m-5G_sQg.CfNvKJ77uU0WFExei_wCHL1nuvsUfPLaHPhRNS0GmVQg.JPEG.yuemj/2022-01-09_opacity1.jpg?type=w1)
 
 	## 7.2. 글꼴, 문자
 	- 폰트, 서체.
@@ -795,6 +805,8 @@
 	- 단위 : px,em,rem등의 단위로 지정
 	- % : 요소의 글꼴 크기의 비율로 지정
 
+  ![font1](https://blogfiles.pstatic.net/MjAyMjAxMDlfMTYx/MDAxNjQxNzM0MTYyNzIz.obnhNrio4vPG0o0TGOUzt7VlyX6pmJFLpnLcoT5Kxg4g.FVsrONdLd3qNQWqiVp18sury847lL_BsBEtJZTowDf0g.JPEG.yuemj/2022-01-09_font1.jpg?type=w1)
+
 	### 7.2.5. font-family
 	- 글꼴(서체) 지정
 	- 글꼴, "글꼴2", ... 글꼴 계열(serif)
@@ -804,10 +816,29 @@
 		- monospace : 고정너비(가로폭이 동등) 글꼴 계열
 		- cursive : 필기체
 		- fantasy : 장식 글꼴 계열
-	- 띄우쓰기 등, 특수문자가 포함된 글꼴 이름은 큰 따옴표로 묶어야 한다.
+	- 띄어쓰기 등, 특수문자가 포함된 글꼴 이름은 큰 따옴표로 묶어야 한다.
 	- 글꼴의 후보 지정하는 이유는 브라우저가 사용 할 수 있는 글꼴들의 우선순위로 시도한다.
 	- 글꼴 후보들을 전부 사용 할 수 없는 상황이라면, 마지막의 작성 된 필수값인 글꼴 계열을 사용한다.
-	  
+	
+  	![font2](https://blogfiles.pstatic.net/MjAyMjAxMDlfNDEg/MDAxNjQxNzM0MTcwMzU2.Q8XIaMKXlV8VLd97HNYW0buyR8w45yrdRJ24Cdbz71kg.XvINgS50ZuLt8NsCYz7RUdIwfyopH1o42ePtlwitwTYg.JPEG.yuemj/2022-01-09_font3.jpg?type=w1)
+
+	### 7.2.6. 문자
+	- color : 글자의 색상
+		- RGB(0,0,0) : 기본 값, 검정색
+		- 색상 : 기타 지정 가능한 색상
+	- text-align
+		- left : 기본값 왼쪽정렬
+		- right
+		- center 등등..
+	- text-decoration
+		- none : 장식 없음
+		- underline : 밑줄
+		- overline : 윗줄
+		- line-throught : 취소선
+	- text-indent
+	  	- 0 : 기본값, 들여쓰기 없음.
+		- 양수입력 : 들여쓰기
+		- 음수입력 : 내어쓰기
 	
 
 	## 7.3. 배경

@@ -1,0 +1,121 @@
+body {
+    height: 3000px;
+}
+
+.line {
+    width : 1000px;
+    height: 10px;
+    background-color: black;
+}
+
+div.smallKakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-size: 100px;
+}
+
+div.bigKakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+}
+
+div.repeatKakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.repeat_X_Kakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 100px;
+}
+div.repeat_Y_Kakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: 10px;
+}
+div.position_top_right_Kakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 100px;
+}
+
+div.position_center_Kakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+}
+div.position_px_Kakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: no-repeat;
+    background-position: 100px, 10px;
+    background-size: 100px;
+}
+
+div.size_cover_Kakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.size_contain_Kakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.attachment_scroll_Kakarot{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+div.attachment_fixed_Kakarot{
+    /*width: 200px;*/
+    height: 200px;
+    background-color: orange;
+    background-image: url("../image/kakarot.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+

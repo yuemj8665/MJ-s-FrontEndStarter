@@ -1,0 +1,15 @@
+span.display {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    font-size: 40px;
+    display: block;
+}
+
+span.position {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    font-size: 40px;
+    position: absolute;
+}

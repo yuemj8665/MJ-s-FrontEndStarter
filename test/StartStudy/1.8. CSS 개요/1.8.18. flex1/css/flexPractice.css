@@ -1,0 +1,68 @@
+.containerNomal {
+    background-color: royalblue;
+
+}
+.containerNomal .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+.containerFlex {
+    background-color: royalblue;
+    display: flex;
+}
+.containerFlex .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+.containerInline_flex {
+    background-color: royalblue;
+    display: inline-flex;
+}
+.containerInline_flex .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+.containerFlex_direction_row {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row;
+}
+.containerFlex_direction_row .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+.containerFlex_direction_row_reverse {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.containerFlex_direction_row_reverse .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+.containerFlex_direction_column {
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+}
+.containerFlex_direction_column .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
